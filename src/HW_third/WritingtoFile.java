@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class WritingtoFile {
     public static void writeToFile(Human human) throws IOException {
+<<<<<<< HEAD
         try {
             FileWriter writer = new FileWriter(new File(human.surname + ".txt"), true);
             writer.write(human.toString() + "\n");
@@ -15,6 +16,11 @@ public class WritingtoFile {
         }
 
 
+=======
+        FileWriter writer = new FileWriter(new File(human.surname + ".txt"), true);
+        writer.write(human.toString() + "\n");
+        writer.close();
+>>>>>>> origin/master
     }
 }
 
